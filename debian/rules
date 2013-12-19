@@ -3,7 +3,7 @@
 
 export DH_OPTIONS
 
-export DH_GOPKG := github.com/jessevdk/go-flags
+export DH_GOPKG := github.com/cheggaaa/pb
 
 %:
 	dh $@ --buildsystem=golang --with=golang
