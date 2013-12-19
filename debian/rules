@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_OPTIONS
+
+export DH_GOPKG := github.com/jessevdk/go-flags
+
+%:
+	dh $@ --buildsystem=golang --with=golang
+
+override_dh_auto_install:
+	dh_auto_install -O--buildsystem=golang
+	rm -rf ${CURDIR}/debian/golang-pb-dev/usr/bin

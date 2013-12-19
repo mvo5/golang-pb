@@ -1,0 +1,15 @@
+Source: golang-pb
+Section: devel
+Priority: extra
+Maintainer: Sergio Schvezov <sergio.schvezov@canonical.com>
+Build-Depends: debhelper (>= 9), dh-golang, golang-go
+Standards-Version: 3.9.4
+Homepage: https://github.com/cheggaaa/pb
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-go/packages/golang-pb.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-go/packages/golang-pb.git
+
+Package: golang-pb-dev
+Architecture: all
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Simple progress bar for console programs
+ This Go package provides a simple progress bar for console programs.

@@ -1,0 +1,5 @@
+golang-pb (0.0~git20131219-1) unstable; urgency=low
+
+  * Initial release (Closes: #732636)
+
+ -- Sergio Schvezov <sergio.schvezov@canonical.com>  Thu, 19 Dec 2013 12:55:59 -0300
