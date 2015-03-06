@@ -2,10 +2,9 @@ package pb
 
 import (
 	"fmt"
-	"strings"
 	"strconv"
+	"strings"
 )
-
 
 const (
 	// By default, without type handle
@@ -17,15 +16,14 @@ const (
 // Format integer
 func Format(i int64, units int) string {
 	switch units {
-		case U_BYTES:
-			return FormatBytes(i)
+	case U_BYTES:
+		return FormatBytes(i)
 	}
 	// by default just convert to string
 	return strconv.Itoa(int(i))
 }
 
-
-// Convert bytes to human readable string. Like a 2 MiB, 64.2 KiB, 52 B
+// Convert bytes to human readable string. Like a 2 MB, 64.2 KB, 52 B
 func FormatBytes(i int64) (result string) {
 	switch {
 	case i > (1024 * 1024 * 1024 * 1024):
