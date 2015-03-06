@@ -1,3 +1,9 @@
+golang-pb (0.0~git20150224-1) unstable; urgency=low
+
+  * New git snapshot
+
+ -- Michael Vogt <michael.vogt@ubuntu.com>  Fri, 06 Mar 2015 10:20:45 +0100
+
 golang-pb (0.0~git20131219-1) unstable; urgency=low
 
   * Initial release (Closes: #732636)
